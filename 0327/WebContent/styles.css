@@ -1,0 +1,23 @@
+body {
+	background-color: skyblue;
+}
+h1 {
+	color: blue;
+	font-size: 200%;
+}
+p{
+	color: red;
+	font-size: 25px;
+}
+
+/* 클래스 선택자 : 중복 허용 */
+.p1{
+	background-color: teal;
+	font-size: 32px;
+}
+
+/* 아이디 선택자 : 중복 안됨 */
+#myp1{
+	color: navy;
+	font-size: 50px;
+}

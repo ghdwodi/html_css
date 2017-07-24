@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>자바스크립트 이벤트 처리2</title>
+		<script type="text/javascript">
+			function onTest() {
+				document.getElementById("myImage").src="javascript_img/img/pic_bulbon.gif";
+			}
+			function offTest() {
+				document.getElementById("myImage").src="javascript_img/img/pic_bulboff.gif";
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="Turn on" onclick="onTest()" />
+		<input type="button" value="Turn off" onclick="offTest()" /><br />
+		<img id="myImage" src="javascript_img/img/pic_bulboff.gif"
+			 style="width: 100px; margin-top: 20px">
+		
+	</body>
+</html>

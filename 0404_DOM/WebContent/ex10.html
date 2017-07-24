@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>노드 변경 : replaceChild</title>
+		<style type="text/css">
+			div{
+				border: 1px solid red;
+				width: 50%;
+			}
+		</style>
+		<script type="text/javascript">
+			onload = function() {
+				var p = document.createElement("p");
+				var s = document.createTextNode("안녕?");
+				p.appendChild(s);
+				
+				var p2 = document.createElement("p");
+				var s2 = document.createTextNode("Hello?");
+				p2.appendChild(s2);
+				
+				document.getElementById("div").appendChild(p);
+				
+				document.getElementById("btn1").onclick = function() {
+					document.getElementById("div").replaceChild(p2,p);
+				}
+				document.getElementById("btn2").onclick = function() {
+					document.getElementById("div").replaceChild(p,p2);
+				}
+			};
+		</script>
+	</head>
+	<body>
+		<div id="div"></div>
+		<button id="btn1">replace1</button>
+		<button id="btn2">replace2</button>
+	</body>
+</html>

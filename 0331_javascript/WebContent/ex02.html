@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>자바스크립트 대화상자</title>
+		<script type="text/javascript">
+			// 대화상자
+			// 경고(alert) : window.alert("문자열");
+			// window는 생략하고 그냥 alert이라 써도 된다.
+			// 확인(confirm) : window.confirm("문자열"); <= 확인(true), 취소(false)
+			// 입력상자(prompt) : window.prompt("문자열", "초기값");
+			//					  window.prompt("문자열");
+			document.write("<h2>");
+//			var res = window.alert("안녕하세요\nhi");
+//			document.write(res);	// undefined : 정의되지 않음
+
+//			var res = confirm("안녕하세요")?"안녕하다":"안녕못하다";
+//			document.write(res);
+
+			var res = prompt("정수입력",10)%2==0?"짝수":"홀수";
+			document.write(res);
+			document.write("</h2>");
+			
+			
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>

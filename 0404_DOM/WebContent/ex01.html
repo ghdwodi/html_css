@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>DOM(Document Object Model)</title>
+		<style type="text/css">
+			div {
+				background-color: orange;
+				height: 100px;
+			}
+		</style>
+		<!-- 인식됨 -->
+		<script type="text/javascript">
+			function change_go() {
+				document.getElementById("mydiv").style.background="yellow";
+			}
+		</script>
+		<!-- 인식 안됨 -->
+<!-- 	<script type="text/javascript">
+			var btn = document.getElementById("btn2");
+			btn.onclick = function() {	// 익명함수 : 눌렀을 때 실행하는 작업
+				document.getElementById("mydiv").style.color="red";
+			};
+		</script>
+		-->
+		<script type="text/javascript">
+			// 페이지 로드 이벤트 => body를 읽고 난 후 실행하기
+			window.onload = function() {
+				var btn = document.getElementById("btn2");
+				btn.onclick = function() {	// 익명함수 : 눌렀을 때 실행하는 작업
+					document.getElementById("mydiv").style.color="red";
+					document.getElementById("mydiv").style.width="100px";
+				};
+			}
+		</script>
+	</head>
+	<body>
+		<!-- DOM(Document Object Model) : 문서 객체 모델 -->
+		<!-- 웹브라우저가 html페이지를 인식하는 방식의 하나이다. -->
+		<!-- 노드 : html의 각 요소 = Element = 태그 <= DOM에서는 노드라고 부른다. -->
+		<!-- DOM은 트리 구조이다. 부모노드, 자식노드, 형제노드가 있다. -->
+		<h2>아이디 참조 : getElementById()</h2>
+		<div id="mydiv"><span>안녕</span>하슈</div>
+		
+		<button id="btn1" onclick="change_go()">스타일변경1</button>
+		<input type="button" id="btn2" value="스타일변경2" />
+		
+	</body>
+</html>

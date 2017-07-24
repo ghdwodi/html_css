@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>배열</title>
+		<script type="text/javascript">
+			// 자바의 배열과 달리 크기나 자료형에 구애받지 않는다.
+			var arr = new Array();
+			arr[0] = "홍길동";
+			arr[1] = "김길동";
+			arr[2] = "이길동";
+			arr[3] = "박길동";
+			arr[4] = "정길동";
+			arr[5] = "고길동";
+			arr[6] = "남궁길동";
+			for (var i = 0; i < arr.length; i++) {
+				document.write(arr[i]+"<br />");
+			}
+			
+			var arr2 = ["사람",12,"원숭이",true,null];
+			for ( var k in arr2) {
+				document.write(arr2[k]+"<br />");
+			}
+			document.write("<hr />");
+			
+			// 맵, json, 객체 형식
+			var arr3 = {
+					name : "batman",
+					race : "human",
+					country : "USA",
+					company : "DC"
+			}
+			document.write("name : "+arr3.name);
+			document.write("<br />");
+			document.write("name : "+arr3["name"]);
+			document.write("<br />");
+			for ( var i in arr3) {
+				document.write(arr3[i]+"<br />");
+			}
+			document.write("<hr />");
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>

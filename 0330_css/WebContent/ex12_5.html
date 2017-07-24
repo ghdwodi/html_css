@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Position</title>
+		<!-- z-index -->
+		<style type="text/css">
+			img{
+				position: fixed;
+				left: 10px;
+				top: 20px;
+				z-index: -1;	/* 우선도를 -1로 주어 맨 뒤로 보낸다. */
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Position z-index</h1>
+		<img src="img/1.png">
+		<p class="text">When elements are positioned, they can overlap other elements.
+		The z-index property specifies the stack order of an element 
+		(which element should be placed in front of, or behind, the others).</p>
+	</body>
+</html>

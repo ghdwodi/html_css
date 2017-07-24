@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>if문, switch-case문</title>
+		<script type="text/javascript">
+			// 평균점수 받아서 학점 출력하기
+			var res = prompt("평균점수입력");
+			/* if (res>=90){
+				document.write("A학점");
+			} else if (res>=80){
+				document.write("B학점");
+			} else if (res>=70){
+				document.write("C학점");
+			} else if (res>=60){
+				document.write("D학점");
+			} else {
+				document.write("F학점");
+			}
+ */			
+			switch (parseInt(res/10)) {	// parseInt : 강제로 정수로 변환
+			case 9:
+				grade="A";
+				break;
+			case 8:
+				grade="B";
+				break;
+			case 7:
+				grade="C";
+				break;
+			case 6:
+				grade="D";
+				break;
+			default:
+				grade="F";
+				break;
+			}
+ 			document.write(grade+"학점");
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>

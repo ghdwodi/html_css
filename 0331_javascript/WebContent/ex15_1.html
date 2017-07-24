@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>callback function</title>
+		<script type="text/javascript">
+			// 콜백함수 : 함수를 하나의 자료형처럼 취급할 수 있다.
+			//			  즉 함수를 매개변수로 만들 수 있다.
+			function callTest(callback_k){
+				document.write("일반함수");
+				callback_k();
+			}
+//			callTest(callback_k);
+			var callback_k = function(){
+				document.write("익명함수");
+			}
+			
+			callTest(callback_k);
+			document.write("<br />");
+			callback_k();
+			document.write("<hr />");
+			callTest(callback_k);
+			document.write("<hr />");
+		</script>
+		<script type="text/javascript">
+			function callTest2(callback_k){
+				document.write("일반함수");
+				callback_k();
+			}
+			// 매개변수가 되는 익명함수를 즉석으로 만든다.
+			callTest2(function(){
+				document.write("익명함수");
+			})
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>

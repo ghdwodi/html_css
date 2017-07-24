@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Number Methods</title>
+		<script type="text/javascript">
+			// NaN : 숫자가 들어갈 자리에 숫자가 아닌 다른 값이 들어오면 표시
+			// isNaN() : NaN 확인
+			// Number() : 숫자형 문자를 숫자로 변환. 잘못 들어오면 NaN
+			// parseInt() : 정수 변환 (문자 전의 숫자는 인식)
+			// parseFloat() : 실수 변환
+			
+			document.write(Number("10")+"<br />");			// 10
+			document.write(Number("10.33")+"<br />");		// 10.33
+			document.write(Number("10 20 30")+"<br />");	// NaN
+			document.write(Number("10 years")+"<br />");	// NaN
+			document.write(Number("years 10")+"<br />");	// NaN
+			
+			document.write(parseInt("10")+"<br />");		// 10
+			document.write(parseInt("10.33")+"<br />");		// 10
+			document.write(parseInt("10 20 30")+"<br />");	// 10
+			document.write(parseInt("10 years")+"<br />");	// 10
+			document.write(parseInt("years 10")+"<br />");	// NaN
+			
+			document.write(parseFloat("10")+"<br />");		// 10
+			document.write(parseFloat("10.33")+"<br />");	// 10.33
+			document.write(parseFloat("10 20 30")+"<br />");// 10
+			document.write(parseFloat("10 years")+"<br />");// 10
+			document.write(parseFloat("years 10")+"<br />");// NaN
+			
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>

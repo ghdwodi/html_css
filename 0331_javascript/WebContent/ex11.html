@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<script type="text/javascript">
+			document.write("<h2>function 연습</h2>");
+			function test(){
+				document.write("<h2>function 연습 : test()</h2>");
+			}
+		</script>
+	</head>
+	<!-- on이 붙은 태그속성은 자바스크립트 함수 호출을 뜻한다. -->
+	<!-- body onclick = "test()" <= 버튼 클릭 시 test함수 호출 -->
+	<!-- onclick으로 함수 호출 시 기존 내용은 전부 지워진다. -->
+	<body>
+		<h2>안녕하세요</h2>
+		<button onclick="test()">클릭</button>
+	</body>
+</html>

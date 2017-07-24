@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Image</title>
+	</head>
+	<body>
+		<img alt="naver" src="image/naver.jpg" title="네이버"><br />
+		<img alt="naver" src="image/naver.jpg" border="2px" width="100px"><br />
+		<img alt="naver" src="image/naver.jpg" border="2px" height="80px"><br />
+		
+		<!-- 그림의 여백 -->
+		<hr />
+		<img alt="naver" src="image/naver.jpg" border="1px" width="200px">네이버<br />
+		<img alt="naver" src="image/naver.jpg" border="1px" width="200px" vspace="50px">네이버<br />
+		<img alt="naver" src="image/naver.jpg" border="1px" width="200px">네이버<br />
+		<img alt="naver" src="image/naver.jpg" border="1px" width="200px" hspace="50px">네이버<br />
+		<img alt="naver" src="image/naver.jpg" border="1px" width="200px">네이버<br />
+
+		<!-- 그림과 글자 간의 관계 -->		
+		<hr />
+		<img alt="naver" src="image/naver.jpg" border="1px" width="200px" align="top">네이버<br />
+		<img alt="naver" src="image/naver.jpg" border="1px" width="200px" align="bottom">네이버<br />
+		<img alt="naver" src="image/naver.jpg" border="1px" width="200px" align="middle">네이버<br />
+		<hr />
+		<p>
+			<img alt="naver" src="image/naver.jpg" border="2px"
+				height="50px" style="float: right;">네이버
+			<img alt="naver" src="image/naver.jpg" border="2px"
+				height="50px" style="float: right;">네이버
+			<img alt="naver" src="image/naver.jpg" border="2px"
+				height="50px" style="float: right;">네이버
+		</p>
+		<hr />
+		<p>
+			<img alt="naver" src="image/naver.jpg" border="2px"
+				height="50px" style="float: left;">네이버
+			<img alt="naver" src="image/naver.jpg" border="2px"
+				height="50px" style="float: left;">네이버
+			<img alt="naver" src="image/naver.jpg" border="2px"
+				height="50px" style="float: left;">네이버
+		</p>
+		
+		
+		<!-- 이미지 맵 : 이미지를 나눠서 링크를 거는 것 -->
+		<!-- 하나의 이미지에 여러 개의 링크를 사용할 수 있다. -->
+		<!-- 이미지를 실제로 쪼개는 것은 아니다. -->
+		<img alt="naver" src="image/naver.jpg" usemap="#m">
+		<map name="m">
+			<area alt="" title="" href="ex01.html" shape="rect" coords="100,0,210,90">
+			<area alt="" title="" href="ex02.html" shape="circle" coords="270,50,50">
+			<area alt="" title="" href="ex04.html" shape="rect" coords="330,0,480,100">
+		</map>
+	</body>
+</html>

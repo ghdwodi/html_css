@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>function</title>
+		<script type="text/javascript">
+			var su=100;		// head에서 만든 변수는 전역변수이다.
+			function add(a,b){
+				document.write(a+" + "+b+" = "+(a+b));
+				document.write("<br />");
+			}
+			
+			function sub(a,b){
+				return a-b;
+			}
+			
+			// start부터 end까지 k의 배수 숫자 구하기
+			function test(start, end, k){
+				var count = 0;
+				for (var i = start; i <= end; i++) {
+					if (i%k==0) {
+						count++;
+					}
+				}
+			document.write(start+"부터 "+end+"까지 "+k+"의 배수는 총 "+count+"개입니다.")
+			}
+		</script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			document.write("su = "+su);
+			document.write("<br />");
+			
+			add(100,200);
+			add("대한민국 ","퐈이팅");
+			
+			document.write(sub(10,5));
+			document.write("<br />");
+			
+			document.write(sub("대한민국 ","퐈이팅"));
+			document.write("<br />");
+			test(1,100,5);
+		</script>
+	</body>
+</html>

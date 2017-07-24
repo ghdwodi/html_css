@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>디지털 시계</title>
+		<script type="text/javascript">
+			function test() {
+				var now = new Date();
+				var s = now.getFullYear()+"년 "+(now.getMonth()+1)+"월 "+
+				now.getDate()+"일<br />"+ now.getHours()+":"+now.getMinutes()+":"+now.getSeconds();
+				
+				document.getElementById("clock").innerHTML = s;
+				
+				setTimeout("test()", 1000);	// 콜백함수 : 자기 자신을 호출
+			}
+		</script>
+	</head>
+	<body onload="test()">
+		<h2><span id="clock"></span></h2>
+	</body>
+</html>

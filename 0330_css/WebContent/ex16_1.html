@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Selecters</title>
+		<style>
+		/* 요소 선택 */
+		p {
+		    background-color: skyblue;
+		}
+		
+		/* 자손 */
+		div p {
+		    background-color: yellow;
+		}
+		
+		/* 자식 */
+		div > p {
+		    background-color: pink;
+		}
+		
+		/* 모든 형제(sibling)요소 */
+		div ~ p {
+		    background-color: grey;
+		}
+		
+		/* 바로 다음에 오는 형제(sibling)요소 하나에만 적용 */
+		div + p {
+		    background-color: red;
+		}
+		</style>
+	</head>
+	<body>
+	
+		<div>
+			<p>Paragraph 1 in the div.</p>
+			<p>Paragraph 2 in the div.</p>
+			<span>
+			<p>Paragraph 3 in the div.</p>
+			</span> <!-- not Child but Descendant -->
+			<p>Paragraph 4. Not in a div.</p>
+		</div>
+		
+		<p>Paragraph 5. Not in a div.</p>
+		<p>Paragraph 6. Not in a div.</p>
+		<span>
+			<p>Paragraph 7 in the div.</p>
+		</span>
+		
+	</body>
+</html>

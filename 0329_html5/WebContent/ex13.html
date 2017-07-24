@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>캔버스</title>
+		<style type="text/css">
+			canvas{
+				border: 1px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="myCanvas" width="800" height="600"></canvas>
+		<script type="text/javascript">
+			var canvas = document.getElementById("myCanvas");
+			var ctx = canvas.getContext("2d");
+			
+			/* 선 그리기 */
+			ctx.beginPath();
+			ctx.moveTo(10,10);
+			ctx.lineTo(80,60);
+			ctx.stroke();
+			ctx.moveTo(80,10);
+			ctx.lineTo(10,60);
+			ctx.lineWidth=2;		/* 선 굵기 */
+			ctx.lineCap="round";	/* 선 끝모양 */
+			ctx.strokeStyle="red";	/* 선 색깔 */
+			ctx.stroke();
+			ctx.beginPath();
+			ctx.moveTo(40,10);
+			ctx.lineTo(10,30);
+			ctx.lineCap="round";	/* 선 끝모양 */
+			ctx.strokeStyle="black";	/* 선 색깔 */
+			ctx.stroke();
+			ctx.lineTo(40,60);
+			ctx.stroke();
+			ctx.lineTo(80,30);
+			ctx.stroke();
+			ctx.lineTo(40,10);
+			ctx.stroke();
+			ctx.beginPath();
+			ctx.moveTo(30,30);
+			ctx.lineTo(50,30);
+			ctx.lineWidth=10;		/* 선 굵기 */
+			ctx.strokeStyle="green";	/* 선 색깔 */
+			ctx.stroke();
+			
+			/* 사각형 그리기 */
+			ctx.beginPath();
+			ctx.fillStyle = "skyblue";
+			ctx.fillRect(90,10,80,80);	/* x,y,너비,높이 */
+			
+			ctx.beginPath();
+			ctx.strokeStyle = "cyan";
+			ctx.lineWidth=1;
+			ctx.strokeRect(180,10,80,80);
+			
+			/* 원 그리기 arc(x,y,반지름,시작각,끝각) */
+			/* 각은 호도법 기준 */
+			ctx.beginPath();
+			ctx.strokeStyle = "black";
+			ctx.arc(310,50,40,0,2*Math.PI);
+			ctx.stroke();
+
+			ctx.beginPath();
+			ctx.arc(400,50,40,0.25*Math.PI,1.675*Math.PI);
+			ctx.stroke();
+			
+			ctx.beginPath();
+			ctx.arc(50,150,40,0,2*Math.PI);
+			ctx.fillStyle="#ff0"
+			ctx.fill();
+			ctx.stroke();
+
+			ctx.beginPath();
+			ctx.arc(140,150,40,0.25*Math.PI,1.675*Math.PI);
+			ctx.fill();
+			ctx.stroke();
+
+			ctx.beginPath();
+			ctx.arc(230,150,40,0.25*Math.PI,1.675*Math.PI);
+			ctx.fill();
+			
+			/* 작업 마무리 */
+			ctx.closePath();
+		</script>
+	</body>
+</html>

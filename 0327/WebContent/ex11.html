@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>	<!-- head에 있는 내용은 먼저 읽어들인다. -->
+		<meta charset="UTF-8">
+		<title>Horizontal Lists</title>
+		<!-- text로 이루어짐/style sheet -->
+		<style type="text/css">
+			/* 요소 선택자 : Body에 있는 태그들을 직접 선택해 해당 stlye을 적용한다. */
+			/* html 5부터는 head에 css로 style을 적용하는 것이 정석이다. */
+			ul {
+				list-style-type: none;
+				margin: 0;			/* 바깥 여백 */
+				padding: 0;			/* 안쪽 여백 */
+				overflow: hidden;	/* 넘쳤을 경우 숨김 */
+				background-color: #333333;
+			}
+			
+			li {
+				float: left;	/* 박스 형태로 왼쪽 정렬 */
+			}
+			
+			/* li 내부의 블록 레벨에 적용 */
+			
+			li a {
+				display: block;	/* 글자 크기만큼의 블록 레벨 */
+				/* display: inline; <= 인라인 레벨의 경우 */
+			    color: white;
+			    text-align: center;
+			    padding: 16px;
+			    text-decoration: none;	/* 밑줄 없애기 */
+			}
+			
+			/* hover : 마우스가 특정 영역에 올라온 경우 */
+			/* 이런 것을 '가상 포인트'라 한다. */
+			li a:hover {
+				background-color: #777777;
+			}
+		</style>
+	</head>
+	<body>
+		<div style="text-align: center">	<!-- head에서 주어진 속성이 우선이므로 태그가 통하지 않는다. -->
+			<ul>
+				<li><a href="#">Home</a></li>	<!-- "#"은 현재 페이지의 상단을 의미 -->
+				<li><a href="#">News</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+		</div>
+	</body>
+</html>

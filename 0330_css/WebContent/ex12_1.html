@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Position</title>
+		<!-- static : 정적(정적 배치가 기본(default)이다) -->
+		<!-- margin을 이용해 절대적인 여백을 준다 -->
+		<style type="text/css">
+			div.static {
+			    position: static;
+			    border: 3px solid red;
+			    margin-bottom: 30px;
+			    margin-left: 30px;
+			    /* left: 30px; 이런 상대위치 태그는 먹히지 않는다. */
+			}
+		</style>
+	</head>
+	<body>
+		<h2>position : static;</h2>
+		<p>An element with position: static; is not positioned in any special way; it is 
+		always positioned according to the normal flow of the page:</p>
+		
+		<div class="static">
+		This div element has position: static;
+		</div>
+		<p>An element with position: static; is not positioned in any special way; it is 
+		always positioned according to the normal flow of the page:</p>
+	</body>
+</html>

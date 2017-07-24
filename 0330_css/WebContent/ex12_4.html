@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Position</title>
+		<!-- absolute : 기존 포지션 내에서 절대 좌표 적용 -->
+		<style type="text/css">
+			div.relative {
+			    position: relative;
+			    width: 400px;
+				height: 200px;
+				border: 3px solid #73AD21;
+			}
+			div.absolute {
+			    position: absolute;
+				width: 300px;
+				height: 20px;
+				border: 3px solid #73AD21;
+				bottom: 0px;
+				right: 0px;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>position : fixed;</h2>
+		<p>An element with position: static; is not positioned in any special way; it is 
+		always positioned according to the normal flow of the page:</p>
+		
+		<div class="relative">
+		This div element has position: relative;
+			<div class="absolute">
+			This div element has position: absolute;
+			</div>
+		</div>
+		
+		
+		<p>An element with position: static; is not positioned in any special way; it is 
+		always positioned according to the normal flow of the page:</p>
+	</body>
+</html>

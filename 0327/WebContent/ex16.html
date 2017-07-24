@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Table</title>
+		<style type="text/css">
+			table, th, td {
+				border: 1px solid black; text-align: center;
+			}
+			table {
+				width: 50%;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>테이블 연습</h1>
+		<table>
+			<!-- 캡션 : 맨 위에 위치 -->
+			<caption>주소록</caption>
+			<colgroup>
+				<col style="background-color: blue;" />
+				<col span="3" style="background-color: orange;" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>이름</th><th>나이</th><th>주소</th><th>전화번호</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr style="background-color: gray;">
+					<td>홍길동</td><td>14</td><td>서울시</td><td>010-7979-7979</td>
+				</tr>
+				<tr>
+					<td>김길동</td><td>15</td><td>서울시</td><td>010-7979-7979</td>
+				</tr>
+				<tr>
+					<td>이길동</td><td>16</td><td>서울시</td><td>010-7979-7979</td>
+				</tr>
+				<tr>
+					<td>박길동</td><td>17</td><td>서울시</td><td>010-7979-7979</td>
+				</tr>
+				<tr>
+					<td>정길동</td><td>18</td><td>서울시</td><td>010-7979-7979</td>
+				</tr>
+			</tbody>
+			<caption>2017년 현재</caption>
+		</table>
+	</body>
+</html>

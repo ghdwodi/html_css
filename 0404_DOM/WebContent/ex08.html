@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>노드 복사 : cloneNode</title>
+		<script type="text/javascript">
+			onload = function() {
+				var hr = document.createElement("hr");
+				document.body.appendChild(hr);
+				var div2 = document.getElementById("div").cloneNode(true);
+				div2.style.color="red";
+//				document.body.appendChild(div2);		// 추가
+				document.body.insertBefore(div2,div);	// 삽입
+			};
+		</script>
+	</head>
+	<body>
+		<div id="div">안녕</div>
+	
+	</body>
+</html>
